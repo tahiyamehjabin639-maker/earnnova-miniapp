@@ -43,13 +43,25 @@
       </section>
 
       <!-- Monetag Ad Area -->
-      <section class="ad-card">
-        <div class="ad-label">ADVERTISEMENT</div>
+     <section class="ad-card">
+  <div class="ad-label">ADVERTISEMENT</div>
 
-        <div id="monetag-ad" class="ad-placeholder">
-          <span>Monetag Ad Here</span>
-        </div>
-      </section>
+  <div id="monetag-ad" class="ad-placeholder">
+    <span>Loading advertisement...</span>
+  </div>
+
+  <script>
+    (function(s) {
+      s.dataset.zone = '11864950';
+      s.src = 'https://nap5k.com/tag.min.js';
+    })(
+      [document.documentElement, document.body]
+        .filter(Boolean)
+        .pop()
+        .appendChild(document.createElement('script'))
+    );
+  </script>
+</section>
 
       <!-- Tasks -->
       <section class="section">
