@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1020;
+  color: #ffffff;
+}
+
+.app {
+  width: 100%;
+  max-width: 620px;
+  margin: auto;
+  min-height: 100vh;
+  padding: 18px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #9299ad;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  background: #6c5ce7;
+}
+
+.balance-card {
+  padding: 24px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #171d38, #242c55);
+  border: 1px solid #30385f;
+}
+
+.small-title {
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  color: #969db2;
+}
+
+.balance {
+  margin-top: 8px;
+  font-size: 42px;
+  font-weight: 800;
+  word-break: break-word;
+}
+
+.coin {
+  font-size: 20px;
+  color: #a99cff;
+}
+
+.balance-note {
+  margin-top: 6px;
+  color: #969db2;
+  font-size: 13px;
+}
+
+.ad-card {
+  margin-top: 18px;
+}
+
+.ad-label {
+  margin-bottom: 7px;
+  font-size: 10px;
+  color: #7f879e;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.ad-placeholder {
+  min-height: 100px;
+  border: 1px dashed #454d6b;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #727a92;
+  background: #11172a;
+  font-size: 13px;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.section-header span {
+  color: #8f97ae;
+  font-size: 12px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 10px;
+  background: #141a2d;
+  border: 1px solid #252d49;
+  border-radius: 17px;
+}
+
+.task-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #242b49;
+  color: #a99cff;
+  font-weight: bold;
+}
+
+.task-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.task-info strong {
+  display: block;
+  font-size: 14px;
+}
+
+.task-info small {
+  display: block;
+  margin-top: 5px;
+  color: #80889f;
+  font-size: 11px;
+}
+
+.task-btn {
+  border: 0;
+  min-width: 50px;
+  min-height: 42px;
+  border-radius: 12px;
+  background: #6c5ce7;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.task-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.withdraw-card {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #141a2d;
+  border: 1px solid #252d49;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.withdraw-card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.withdraw-card p {
+  margin: 6px 0 0;
+  color: #838ba2;
+  font-size: 12px;
+}
+
+.withdraw-btn {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #6c5ce7;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.message {
+  min-height: 20px;
+  margin-top: 14px;
+  text-align: center;
+  color: #a99cff;
+  font-size: 13px;
+}
+
+footer {
+  padding: 30px 0 15px;
+  text-align: center;
+  color: #596177;
+  font-size: 11px;
+}
+
+@media (max-width: 380px) {
+
+  .app {
+    padding: 14px;
+  }
+
+  .balance {
+    font-size: 34px;
+  }
+
+  .task {
+    gap: 9px;
+  }
+
+  .withdraw-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .withdraw-btn {
+    width: 100%;
+  }
+}
