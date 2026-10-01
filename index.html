@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+
+  <title>EarnNova</title>
+
+  <!-- Telegram Mini App SDK -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="topbar">
+      <div>
+        <div class="brand">EarnNova</div>
+        <div class="subtitle">Tasks • Rewards • Earn</div>
+      </div>
+
+      <div class="avatar">E</div>
+    </header>
+
+    <main>
+
+      <!-- Balance -->
+      <section class="balance-card">
+        <div class="small-title">YOUR BALANCE</div>
+
+        <div class="balance">
+          <span id="balance">0.00</span>
+          <span class="coin">N</span>
+        </div>
+
+        <div class="balance-note">
+          Complete tasks to earn rewards
+        </div>
+      </section>
+
+      <!-- Monetag Ad Area -->
+      <section class="ad-card">
+        <div class="ad-label">ADVERTISEMENT</div>
+
+        <div id="monetag-ad" class="ad-placeholder">
+          <span>Monetag Ad Here</span>
+        </div>
+      </section>
+
+      <!-- Tasks -->
+      <section class="section">
+
+        <div class="section-header">
+          <h2>Available Tasks</h2>
+          <span id="task-count">2 Tasks</span>
+        </div>
+
+        <div class="task">
+
+          <div class="task-icon">▶</div>
+
+          <div class="task-info">
+            <strong>Watch an Advertisement</strong>
+            <small>Complete the available ad task</small>
+          </div>
+
+          <button class="task-btn" data-reward="1">
+            +1
+          </button>
+
+        </div>
+
+        <div class="task">
+
+          <div class="task-icon">✓</div>
+
+          <div class="task-info">
+            <strong>Daily Check-in</strong>
+            <small>Claim your daily reward</small>
+          </div>
+
+          <button class="task-btn" data-reward="2">
+            +2
+          </button>
+
+        </div>
+
+      </section>
+
+      <!-- Withdraw -->
+      <section class="withdraw-card">
+
+        <div>
+          <h2>Withdraw</h2>
+          <p>Minimum withdrawal: 100 N</p>
+        </div>
+
+        <button id="withdrawBtn" class="withdraw-btn">
+          Withdraw
+        </button>
+
+      </section>
+
+      <div id="message" class="message"></div>
+
+    </main>
+
+    <footer>
+      EarnNova © 2026
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
